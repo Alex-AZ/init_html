@@ -22,7 +22,17 @@
                     L'histoire du <abbr title="Hyper Text Markup Language" class= "dropdown">HTML</abbr> à travers les âges.<!--title="" >> attribut et utiliser <abbr> le plus possible pour les acronymes !-->
                 </p>
 
-                <nav> <!--Element qui regroupe des balises de navigation-->
+                <nav class="bg-dark"> <!--Element qui regroupe des balises de navigation-->
+
+                    <!--Burger menu button : displayed only when device width <= 576px-->
+                    <button id="burger-btn">
+                        ---<br>
+                        ---<br>
+                        ---<br>
+                    </button>
+
+                    <!--Menu do not be displayed if device width <= 576px-->
+
                     <ul class="flex-container"><!--Conteneur de liste (<ul> liste avec puce et <ol> avec numéros)-->
                         <li><!--ligne de liste-->
                             <a class="btn bg-dark shadowed" href="#" title="HTML la référence"><!--Très utile d'avoir un attribut title sur les liens pour décrire sur quoi envoi le lien !!-->
