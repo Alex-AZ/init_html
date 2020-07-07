@@ -16,14 +16,16 @@
     </head> <!--Element head-->
 
     <body>
-        <header>
-            <h1>Découvrir le HTML</h1> <!--Une seule balise <h1> dans le doc HTML (si plusieurs balises <h1> >> faute pour le référencement)-->
+        <header class="row">
+            
+            <h1 class="col-xl-6 col-12">Découvrir le HTML</h1> <!--Une seule balise <h1> dans le doc HTML (si plusieurs balises <h1> >> faute pour le référencement)-->
 
-                <p>
+                <p class="col-xl-6 col-12">
                     L'histoire du <abbr title="Hyper Text Markup Language" class= "dropdown">HTML</abbr> à travers les âges.<!--title="" >> attribut et utiliser <abbr> le plus possible pour les acronymes !-->
                 </p>
+            
 
-                <nav class="bg-dark"> <!--Element qui regroupe des balises de navigation-->
+                <nav class="bg-dark col-12 col-xl-12"> <!--Element qui regroupe des balises de navigation-->
 
                     <!--Burger menu button : displayed only when device width <= 576px-->
                     <button id="burger-btn">
@@ -67,7 +69,7 @@
         </header>
 
         <main class="row"><!--Mettre le contenu principal du doc HTML dans <main> (une seule fois dans le fichier)-->
-            <section id="section-html" class="col-6"><!--La section sépart sémantiquement des thèmes différents (contient : header, h2 et autres...)-->
+            <section id="section-html" class="col-xl-6 col-12"><!--La section sépart sémantiquement des thèmes différents (contient : header, h2 et autres...)-->
                 <header>
                     <h2>Le langage HTML</h2><!--Thème HTML-->
                     <p>
@@ -93,7 +95,7 @@
                 </article>
             </section>
 
-            <section id="section-css" class="col-6">
+            <section id="section-css" class="col-xl-6 col-12">
                 <header>
                     <h2>Le langage CSS</h2><!--Thème CSS-->
                     <p>

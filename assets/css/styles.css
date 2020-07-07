@@ -105,6 +105,7 @@ h1,h2,h3 {
 abbr {
     font-weight:bold;
     text-decoration: none;
+    color: var(--info);
 }
 
 /*
