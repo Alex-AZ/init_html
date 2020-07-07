@@ -1,0 +1,162 @@
+
+/* ":" désigne à un pseudo élément */
+:root {
+    --title-color: rgb(200, 89, 10); /* Varaiable comme en JS */
+    --main-color: rgb(0, 0, 0);
+    --main-font-size: 1em;
+/**
+    *   Couleurs Bootstrap
+      **/
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b4;
+    --dark: #343a40;
+    --light: #ffffff;
+}
+
+/*
+Global styles
+CSS Rule : selector { property: property_value; }
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--main-font-size); /* "em" correspond à l'unité de référence dans le navigateur : 16px */
+    color: var(--dark);
+}
+
+/* Sur toutes les listes des docs HTML on supp les puces */
+ul {
+    list-style-type: none;
+}
+
+nav {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    width: 10em;
+    margin-right: 0.5em;
+}
+
+/* On veut définir la couleur noir et enlever le soulignement 
+sur tous le liens qui sont dans "li" lui même dans "ul" lui même dans un "nav"
+Le caractère "espace" désigne les "enfants de" */
+nav ul li a {
+    transform: rotate(0deg);
+    text-decoration: none;
+    color: inherit; /* la propriété color hérite de la couleur d'un des parents (tant qu'il y a pas de couleur il remonte dans les parents)*/ 
+}
+
+/* Etat initial */
+nav ul li a.btn {
+    transition: color 0.6s 0.2s ease-in, transform 0.4s 0.4s linear, background-color 0.8s 0.7s ease-out; /* Définit comment passer à l'état final */
+}
+/* "esae-in" fonction d'accélération et "ease-out" le contraire (décélération) */
+
+/* Etat final */
+/* ":hover" => pseudo class (elle n'existe pas) */
+nav ul li a.btn:hover {
+    color: var(--dark);
+    background-color: var(--light);
+    transform: rotate(360deg);
+}
+
+/* Le caracrtère "," permet de factoriser une règle (associer la règle à plusieurs sélecteurs)
+>>> h1 et h2 et h3 seront orange */
+h1,h2,h3 {
+    /* 
+    margin: 0;
+    padding: 0; => Reset user agent stylesheet (permet de mettre à 0 tous les réglages du navigateur : plus de marge par défaut)*/
+    color: rgb(200, 89, 10);
+}
+
+abbr {
+    font-weight:bold;
+    text-decoration: none;
+}
+
+/*
+Sélecteur "class"
+.dropdown {
+    color: var(--info);
+}
+*/
+
+.btn { /* "btn" Transforme le lien en bouton */
+    display: inline-block; /* Affiche un élément sous la forme d'un bloc en ligne */
+    border: solid 1px var(--secondary);
+    width: 8em;
+    /* padding-left: 0.5em;  Marge intérieure gauche
+    padding-right: 0.5em; Marge intérieure droite
+    padding-bottom: 1em; Marge intérieure bas
+    */
+    padding: 1em 0.5em 1em 0.5em ; /* Marge intérieure raccourci (gauche, haut, droite, bas) */
+}
+
+.bg-light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.shadowed {
+    box-shadow: var(--secondary) 1px 3px;
+}
+
+/* Sélecteur sur un ID d'élément : #nom_id */
+section {
+    height: 50vh; /* "vh" => virtuel height */
+}
+
+section#section-html { /* C'est mieux de mettre "section" avant au cas où il y a plusieurs docs HTML */
+    background-color: var(--info);
+}
+
+section#section-css {
+    background-color: var(--warning);
+}
+
+#page-html section#section-html {
+    background-color: var(--light);
+}
+
+#page-html section#section-html h2 {
+    color: var(--info);
+}
+
+footer nav {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li h3 {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+/* 
+Let me some spaces between icons and text
+Attribute selector 
+*/
+span[class^="icon-"] {
+    margin-right: 0.3em;
+}

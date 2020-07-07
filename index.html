@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!--Pour html 5-->
+
+<html>
+    <!--Instructions envoyées au navigateur-->
+    <head>
+        <meta charset="utf-8"> <!--Balise pour les caractères accentués(é...) >> toujours au début de la balise <head>-->
+        <title>Découvrir le HTML</title> <!--La balise(tag) s'affiche en haut de la page du navigateur-->
+        <link href="./assets/css/styles.css" rel="stylesheet">
+        <!--Load icomoon styles-->
+        <link href="./assets/css/style.css" rel="stylesheet">
+    </head> <!--Element head-->
+
+    <body>
+        <header>
+            <h1>Découvrir le HTML</h1> <!--Une seule balise <h1> dans le doc HTML (si plusieurs balises <h1> >> faute pour le référencement)-->
+
+                <p>
+                    L'histoire du <abbr title="Hyper Text Markup Language" class= "dropdown">HTML</abbr> à travers les âges.<!--title="" >> attribut et utiliser <abbr> le plus possible pour les acronymes !-->
+                </p>
+
+                <nav> <!--Element qui regroupe des balises de navigation-->
+                    <ul class="flex-container"><!--Conteneur de liste (<ul> liste avec puce et <ol> avec numéros)-->
+                        <li><!--ligne de liste-->
+                            <a class="btn bg-dark shadowed" href="#" title="HTML la référence"><!--Très utile d'avoir un attribut title sur les liens pour décrire sur quoi envoi le lien !!-->
+                                <span class="icon-html-five"></span>HTML
+                            </a><!--anchor-->
+                        </li>
+                        <li><!--ligne de liste-->
+                            <a class="btn bg-dark shadowed" href="#" title="CSS la référence"><!--Très utile d'avoir un attribut title sur les liens pour décrire sur quoi envoi le lien !!-->
+                                <span class="icon-css3"></span>CSS
+                            </a><!--anchor-->
+                        </li>
+                        <li><!--ligne de liste-->
+                            <a class="btn bg-dark shadowed" href="./section-html.html" title="CSS la référence"><!--Très utile d'avoir un attribut title sur les liens pour décrire sur quoi envoi le lien !!-->
+                                <span class="icon-home3"></span>Home
+                            </a><!--anchor-->
+                        </li>
+                        <li>
+                            <a class="btn bg-dark shadowed" href="tel:0522336699" title="Click to call">
+                                Appelez nous
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                class="btn bg-dark shadowed" href="mailto:toto@tartempion.com?subject=Contact us" 
+                                title="Send an email">
+                                Mail
+                            </a>
+                        </li>
+                    </ul>         
+                </nav>
+        </header>
+
+        <main><!--Mettre le contenu principal du doc HTML dans <main> (une seule fois dans le fichier)-->
+            <section id="section-html"><!--La section sépart sémantiquement des thèmes différents (contient : header, h2 et autres...)-->
+                <header>
+                    <h2>Le langage HTML</h2><!--Thème HTML-->
+                    <p>
+                        Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+                        <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+                    </p>
+                </header>
+                <article><!--Un seul article dans une balise article (titre, lien, référence, etc...)-->
+                    <header>
+                        <h3>Deux familles de balises HTML</h3>
+                    </header>
+                    <p>
+                        Les balises bloc définissent un rectangle occupant 
+                        la totalité de la largeur disponible dans le navigateur.
+                    </p>
+                    <footer>
+                        <cite title="w3c.org">
+                            <a href="https://www.w3.org" title="W3C" target="_new">
+                            Bloc tags
+                            </a>
+                        </cite>
+                    </footer>
+                </article>
+            </section>
+
+            <section id="section-css">
+                <header>
+                    <h2>Le langage CSS</h2><!--Thème CSS-->
+                    <p>
+                        Le langage CSS est responsable de la forme des contenus.
+                    </p>
+                </header>
+            </section>
+        </main>
+
+        <!--
+            Element body : contenu visible dans la fenêtre du navigateur
+        -->
+        <footer class="bg-dark"> <!--Pas obligatoire mais recommandé-->
+            <nav>
+                <ul>
+                    <li>
+                        <h3>Nos réseaux sociaux</h3>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_new" title="Foloow Us"><span class="icon-facebook2"></span> Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/explore" target="_new" title="Foloow Us"><span class="icon-twitter"></span> Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://fr.linkedin.com/" target="_new" title="Foloow Us"><span class="icon-linkedin"></span> Linkedin</a>
+                    </li>
+                </ul>    
+            </nav>
+        </footer>
+    </body>
+</html><!--Fin du document-->
