@@ -43,6 +43,7 @@ nav {
     flex-direction: row;
 }
 
+/* Design burger button */
 #burger-btn {
     display: none;
     width: 5em;

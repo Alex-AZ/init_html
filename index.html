@@ -10,6 +10,7 @@
 
         <title>Découvrir le HTML</title> <!--La balise(tag) s'affiche en haut de la page du navigateur-->
         <link href="./assets/css/styles.css" rel="stylesheet">
+        <link href="./assets/css/layout.css" rel="stylesheet">
         <!--Load icomoon styles-->
         <link href="./assets/css/style.css" rel="stylesheet">
     </head> <!--Element head-->
@@ -65,8 +66,8 @@
                 </nav>
         </header>
 
-        <main><!--Mettre le contenu principal du doc HTML dans <main> (une seule fois dans le fichier)-->
-            <section id="section-html"><!--La section sépart sémantiquement des thèmes différents (contient : header, h2 et autres...)-->
+        <main class="row"><!--Mettre le contenu principal du doc HTML dans <main> (une seule fois dans le fichier)-->
+            <section id="section-html" class="col-6"><!--La section sépart sémantiquement des thèmes différents (contient : header, h2 et autres...)-->
                 <header>
                     <h2>Le langage HTML</h2><!--Thème HTML-->
                     <p>
@@ -92,7 +93,7 @@
                 </article>
             </section>
 
-            <section id="section-css">
+            <section id="section-css" class="col-6">
                 <header>
                     <h2>Le langage CSS</h2><!--Thème CSS-->
                     <p>
