@@ -1,0 +1,46 @@
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b4;
+    --dark: #343a40;
+    --light: #ffffff;
+}
+
+/* Form and field */
+
+
+/* ::after => pseudo-élément on le rajoute artificiellement (2 fois 2 points "::" alors que pseudo-class on ajoute ":" */
+.required::after {
+    content: '(*)';
+    color: red;
+}
+
+input:required {
+    color: black;
+}
+
+/* Input design */
+input {
+    border-radius: 0.3em;
+    padding: .5em;
+    border: solid 1px rgb(128, 128, 128);
+}
+
+button[type="submit"] {
+    color: var(--success);
+    padding: 0.5em;
+    width: 10em;
+    color: var(--light);
+    border: solid 1px var(--dark-success);
+    background-color: var(--success);
+    border-radius: 0.3em;
+    transition: background-color 0.3s 0s ease-out;
+}
+
+button[type="submit"]:hover {
+    color: var(--dark);
+    background-color: var(--success);
+}

@@ -11,6 +11,8 @@
         <title>Découvrir le HTML</title> <!--La balise(tag) s'affiche en haut de la page du navigateur-->
         <link href="./assets/css/styles.css" rel="stylesheet">
         <link href="./assets/css/layout.css" rel="stylesheet">
+        <link href="./assets/css/forms.css" rel="stylesheet">
+
         <!--Load icomoon styles-->
         <link href="./assets/css/style.css" rel="stylesheet">
     </head> <!--Element head-->
@@ -129,6 +131,7 @@
 
         <!--Template pour l'affichage du formulaire de contact (la balise template ne s'affiche pas dans le navigateur)-->
         <!--<template id="form-template">-->
+            <h2>Contactez le service client</h2>
 
             <!--"form" c'est un ensemble de champs (ou contrôles de formulaire)-->
             <form>
@@ -137,21 +140,21 @@
                     <input type="text" name="-ctrl" id="name-ctrl" placeholder="Votre nom..."> <!--"input" => balise orpheline-->
                 </div>  
 
-                <div>
+                <div class="required">
                     <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email..." required>
                 </div>
 
                 <div>
-                    <label>Objet de votre demande :</label>
+                    <label class="required">Objet de votre demande :</label>
                     <textarea name="object-ctrl" id="object-ctrl"></textarea>
                 </div>
 
                 <div>
-                    <button id="send-btn">Envoyer</button> 
+                    <button id="send-btn" type="submit">Envoyer</button> 
                 </div>
 
             </form>
-            
+
         <!--</template>-->
         <!--Fin du template-->
 
